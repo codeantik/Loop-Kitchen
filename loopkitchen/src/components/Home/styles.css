@@ -1,0 +1,128 @@
+
+/* body {
+    background-color: #efefef;
+} */
+
+.home-container {
+    height: 90vh;
+    overflow-y: scroll;
+    /* height: 100vh; */
+    /* background-color: #efefef; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: baseline; */
+}
+
+.search-bar {
+    margin-top: 100px;
+}
+
+.search-bar input {
+    outline: none;
+    padding: 8px 10px;
+    width: 500px;
+    font-size: 15px;
+    /* border-right: 0px solid white; */
+}
+
+.search-bar button {
+    outline: none;
+    all: one;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    background-color: rgb(235, 235, 179);
+}
+
+.search-bar button:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.search-results {
+    /* width: 60%; */
+    width: 100%;
+    /* background-color: blue; */
+    margin: 0px auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+    /* margin: 0 auto; */
+}
+
+.card-container {
+    margin: 0 auto;
+    width: 60%;
+    height: 450px;
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    background: white;
+    margin: 20px 10px;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.card {
+    /* border: 0.5px solid gray; */
+    height: 70%;
+}
+
+.card-btns {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    margin-bottom: -10px;
+}
+
+.card-btns div {
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-btns div:first-of-type {
+    color: orange;
+}
+
+.card-btns div:last-of-type {
+    color: red;
+}
+
+.card-btns div:hover + .card-btns div > * {
+    text-shadow: 10px;
+}
+
+/* autocomplete */
+
+.dropdown {
+    max-height: 200px;
+    overflow-y: auto;
+    display: block;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown:empty {
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-row {
+    cursor: pointer;
+    text-align: start;
+    margin: 2px 0;
+    padding: 1px 10px;
+    font-weight: 400;
+  }

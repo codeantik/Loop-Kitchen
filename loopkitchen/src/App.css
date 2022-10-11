@@ -1,0 +1,33 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* overflow-y: hidden; */
+}
+
+.logout-btn {
+  /* all: none;
+  outline: none;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  padding: 5px 10px;
+  background-color: white;
+  /* color: white; */
+  /*border: 1px solid gray;
+  transition: all 0.3s ease; */
+  background: none;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  padding: 5px 10px;
+  font-size: 40px;
+}
+
+.logout-btn:hover {
+  color: orange;
+  cursor: pointer;
+}
